@@ -7,7 +7,7 @@ This repository contains most of the laboratory work of the specialty Computing 
 <details>
 <summary>📘 Semester 1</summary>
 
-- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-1/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
+- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-1/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
 - [✅**Инженерная и компьютерная графика**](https://github.com/Xotab413/bsuir/tree/main/semester-1/computer-engineering-graphics)
 
 </details>
