@@ -1,0 +1,2165 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="02%20Особенности%20языка%20С++.files/filelist.xml">
+<title>Особенности языка С++</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>KEV</o:Author>
+  <o:LastAuthor>KEV</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2011-04-06T16:46:00Z</o:Created>
+  <o:LastSaved>2011-04-06T19:24:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2344</o:Words>
+  <o:Characters>13365</o:Characters>
+  <o:Company>HOME</o:Company>
+  <o:Lines>111</o:Lines>
+  <o:Paragraphs>31</o:Paragraphs>
+  <o:CharactersWithSpaces>15678</o:CharactersWithSpaces>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	mso-pagination:none;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.45pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	letter-spacing:1.0pt;
+	mso-font-kerning:0pt;
+	font-style:italic;}
+h2
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:widow-orphan lines-together;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+h4
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:36.0pt;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:881286582;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1666290810 1665294652 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-start-at:31;
+	mso-level-text:%1;
+	mso-level-tab-stop:57.0pt;
+	mso-level-number-position:left;
+	margin-left:57.0pt;
+	text-indent:-21.0pt;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:899512440;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-262756010 359171714 68747267 68747269 68747265 68747267 68747269 68747265 68747267 68747269;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:90.0pt;
+	mso-level-number-position:left;
+	margin-left:90.0pt;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h2 align=center style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-align:center;text-indent:0cm'><a name="_Toc117269008"></a><a
+name="_Toc79847745"></a><a name="_Toc55028868"></a><a name="_Toc54861043"></a><a
+name="_Toc54855864"></a><a name="_Toc54193325"></a><a name="_Toc54192581"></a><a
+name="_Toc54192348"></a><a name="_Toc54192099"></a><a name="_Toc54191983"></a><a
+name="_Toc519256551"></a><a name="_Toc516652036"></a><a name="_Toc516651290"><span
+style='mso-bookmark:_Toc516652036'><span style='mso-bookmark:_Toc519256551'><span
+style='mso-bookmark:_Toc54191983'><span style='mso-bookmark:_Toc54192099'><span
+style='mso-bookmark:_Toc54192348'><span style='mso-bookmark:_Toc54192581'><span
+style='mso-bookmark:_Toc54193325'><span style='mso-bookmark:_Toc54855864'><span
+style='mso-bookmark:_Toc54861043'><span style='mso-bookmark:_Toc55028868'><span
+style='mso-bookmark:_Toc79847745'><span style='mso-bookmark:_Toc117269008'>Особенности
+языка</span></span></span></span></span></span></span></span></span></span></span></span></a><span
+class=GramE><span style='mso-bookmark:_Toc516651290'><span style='mso-bookmark:
+_Toc516652036'><span style='mso-bookmark:_Toc519256551'><span style='mso-bookmark:
+_Toc54191983'><span style='mso-bookmark:_Toc54192099'><span style='mso-bookmark:
+_Toc54192348'><span style='mso-bookmark:_Toc54192581'><span style='mso-bookmark:
+_Toc54193325'><span style='mso-bookmark:_Toc54855864'><span style='mso-bookmark:
+_Toc54861043'><span style='mso-bookmark:_Toc55028868'><span style='mso-bookmark:
+_Toc79847745'><span style='mso-bookmark:_Toc117269008'> С</span></span></span></span></span></span></span></span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc516651290'><span style='mso-bookmark:_Toc516652036'><span
+style='mso-bookmark:_Toc519256551'><span style='mso-bookmark:_Toc54191983'><span
+style='mso-bookmark:_Toc54192099'><span style='mso-bookmark:_Toc54192348'><span
+style='mso-bookmark:_Toc54192581'><span style='mso-bookmark:_Toc54193325'><span
+style='mso-bookmark:_Toc54855864'><span style='mso-bookmark:_Toc54861043'><span
+style='mso-bookmark:_Toc55028868'><span style='mso-bookmark:_Toc79847745'><span
+style='mso-bookmark:_Toc117269008'>++</span></span></span></span></span></span></span></span></span></span></span></span></span></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>Отметим
+некоторые дополнительные возможности языка<span class=GramE> С</span>++. Далее
+в процессе рассмотрения материала мы более подробно остановимся на этих и
+других, не отмеченных здесь особенностях языка С++.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>Необходимо
+четко представлять, что достоинство языка<span class=GramE> С</span>++ состоит
+не в добавлении в С новых типов, операций и т.д., а в возможности поддержки
+объектно-ориентированного подхода к разработке программ.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269009"></a><a name="_Toc79847746"></a><a
+name="_Toc55028869"></a><a name="_Toc54861044"></a><a name="_Toc54855865"></a><a
+name="_Toc54193326"></a><a name="_Toc54192582"></a><a name="_Toc54192349"></a><a
+name="_Toc54192100"></a><a name="_Toc54191984"></a><a name="_Toc519256552"></a><a
+name="_Toc516652037"></a><a name="_Toc516651291"><span style='mso-bookmark:
+_Toc516652037'><span style='mso-bookmark:_Toc519256552'><span style='mso-bookmark:
+_Toc54191984'><span style='mso-bookmark:_Toc54192100'><span style='mso-bookmark:
+_Toc54192349'><span style='mso-bookmark:_Toc54192582'><span style='mso-bookmark:
+_Toc54193326'><span style='mso-bookmark:_Toc54855865'><span style='mso-bookmark:
+_Toc54861044'><span style='mso-bookmark:_Toc55028869'><span style='mso-bookmark:
+_Toc79847746'><span style='mso-bookmark:_Toc117269009'>Ключевые слова</span></span></span></span></span></span></span></span></span></span></span></span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>Язык<span
+class=GramE> С</span>++ расширяет множество ключевых слов принятых в языке С
+следующими ключевыми словами:</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>class</span></span><span
+style='font-family:"Courier New"'><span style='mso-tab-count:1'>   </span><span
+style='mso-tab-count:1'>    </span></span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>protected</span><span style='font-family:
+"Courier New"'><span style='mso-tab-count:1'>    </span></span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>friend</span><span
+style='font-family:"Courier New"'><span style='mso-tab-count:2'>       </span></span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>inline</span><span
+style='font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>    </span></span><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>private</span></span><span
+style='font-family:"Courier New"'><span style='mso-tab-count:1'>  </span><span
+style='mso-tab-count:1'>    </span></span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>new</span><span style='font-family:"Courier New"'><span
+style='mso-tab-count:2'>      </span><span style='mso-tab-count:1'>    </span></span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'>operator</span><span
+style='font-family:"Courier New"'><span style='mso-tab-count:1'> </span><span
+style='mso-tab-count:1'>    </span></span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>virtual</span><span style='font-family:
+"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='font-family:"Courier New"'><span
+style='mso-tab-count:1'>    </span></span><span class=GramE><span lang=EN-US
+style='font-family:"Courier New";mso-ansi-language:EN-US'>public</span></span><span
+style='font-family:"Courier New"'><span style='mso-tab-count:1'>   </span></span><span
+lang=EN-US style='font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-tab-count:1'>    </span>delete</span><span style='font-family:"Courier New"'><span
+style='mso-tab-count:2'>       </span></span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>this</span><span style='font-family:
+"Courier New"'><span style='mso-tab-count:2'>     </span><span
+style='mso-tab-count:1'>    </span></span><span lang=EN-US style='font-family:
+"Courier New";mso-ansi-language:EN-US'>template</span><span style='font-family:
+"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269010"></a><a name="_Toc79847747"></a><a
+name="_Toc55028870"></a><a name="_Toc54861045"></a><a name="_Toc54855866"></a><a
+name="_Toc54193327"></a><a name="_Toc54192583"></a><a name="_Toc54192350"></a><a
+name="_Toc54192101"></a><a name="_Toc54191985"></a><a name="_Toc519256553"></a><a
+name="_Toc516652038"></a><a name="_Toc516651292"><span style='mso-bookmark:
+_Toc516652038'><span style='mso-bookmark:_Toc519256553'><span style='mso-bookmark:
+_Toc54191985'><span style='mso-bookmark:_Toc54192101'><span style='mso-bookmark:
+_Toc54192350'><span style='mso-bookmark:_Toc54192583'><span style='mso-bookmark:
+_Toc54193327'><span style='mso-bookmark:_Toc54855866'><span style='mso-bookmark:
+_Toc54861045'><span style='mso-bookmark:_Toc55028870'><span style='mso-bookmark:
+_Toc79847747'><span style='mso-bookmark:_Toc117269010'>Константы и переменные</span></span></span></span></span></span></span></span></span></span></span></span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm'><span style='mso-tab-count:1'>    </span>В С++ <span
+class=SpellE>односимвольные</span> константы имеют тип <span class=SpellE>char</span>,
+в то же время в<span class=GramE> С</span>++ поддерживается возможность работы
+с <span class=SpellE>двухсимвольными</span> константами типа <span
+class=SpellE>int</span>:</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm'>’<span class=SpellE>aB</span>’ ,<span
+style='mso-spacerun:yes'>  </span>’\<span class=SpellE>n\t</span>’ .</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'>При этом первый символ располагается в
+младшем байте, а второй - в старшем.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269011"></a><a name="_Toc79847748"></a><a
+name="_Toc55028871"></a><a name="_Toc54861046"></a><a name="_Toc54855867"></a><a
+name="_Toc54193328"></a><a name="_Toc54192584"></a><a name="_Toc54192351"></a><a
+name="_Toc54192102"></a><a name="_Toc54191986"></a><a name="_Toc519256554"></a><a
+name="_Toc516652039"></a><a name="_Toc516651293"><span style='mso-bookmark:
+_Toc516652039'><span style='mso-bookmark:_Toc519256554'><span style='mso-bookmark:
+_Toc54191986'><span style='mso-bookmark:_Toc54192102'><span style='mso-bookmark:
+_Toc54192351'><span style='mso-bookmark:_Toc54192584'><span style='mso-bookmark:
+_Toc54193328'><span style='mso-bookmark:_Toc54855867'><span style='mso-bookmark:
+_Toc54861046'><span style='mso-bookmark:_Toc55028871'><span style='mso-bookmark:
+_Toc79847748'><span style='mso-bookmark:_Toc117269011'>Операции</span></span></span></span></span></span></span></span></span></span></span></span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>В
+языке<span class=GramE> С</span>++ введены следующие новые операции:</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>::<span
+style='mso-spacerun:yes'>  </span>- операция разрешения контекста;</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>.*<span
+style='mso-spacerun:yes'>  </span>и<span class=GramE><span
+style='mso-spacerun:yes'>  </span>-&gt;*<span style='mso-spacerun:yes'> 
+</span>- </span>операции обращения через указатель к компоненте класса;</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span><span
+class=SpellE>new</span><span style='mso-spacerun:yes'>  </span>и<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>delete</span><span
+style='mso-spacerun:yes'>  </span>- операции динамического выделения и
+освобождения памяти.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>Использование
+этих и других операций при разработке программ будет показано далее, при
+изучении соответствующего материала.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><span style='mso-tab-count:1'>    </span><a name="_Toc117269012"></a><a
+name="_Toc79847749"></a><a name="_Toc55028872"></a><a name="_Toc54861047"></a><a
+name="_Toc54855868"></a><a name="_Toc54193329"></a><a name="_Toc54192585"></a><a
+name="_Toc54192352"></a><a name="_Toc54192103"></a><a name="_Toc54191987"></a><a
+name="_Toc519256555"></a><a name="_Toc516652040"></a><a name="_Toc516651294"><span
+style='mso-bookmark:_Toc516652040'><span style='mso-bookmark:_Toc519256555'><span
+style='mso-bookmark:_Toc54191987'><span style='mso-bookmark:_Toc54192103'><span
+style='mso-bookmark:_Toc54192352'><span style='mso-bookmark:_Toc54192585'><span
+style='mso-bookmark:_Toc54193329'><span style='mso-bookmark:_Toc54855868'><span
+style='mso-bookmark:_Toc54861047'><span style='mso-bookmark:_Toc55028872'><span
+style='mso-bookmark:_Toc79847749'><span style='mso-bookmark:_Toc117269012'>Типы
+данных</span></span></span></span></span></span></span></span></span></span></span></span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>В
+С++ поддерживаются все типы данных, предопределенные в <span class=GramE>С.</span>
+Кроме того, введены несколько новых типов данных: классы и ссылки.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-tab-count:1'>         </span>Ссылки
+расширяют и упрощают передачу аргументов в функцию (по значению или по адресу).</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269013"></a><a name="_Toc79847750"></a><a
+name="_Toc55028873"></a><a name="_Toc54861048"></a><a name="_Toc54855869"></a><a
+name="_Toc54193330"></a><a name="_Toc54192586"></a><a name="_Toc54192353"></a><a
+name="_Toc54192104"></a><a name="_Toc54191988"></a><a name="_Toc519256556"></a><a
+name="_Toc516652041"></a><a name="_Toc516651295"><span style='mso-bookmark:
+_Toc516652041'><span style='mso-bookmark:_Toc519256556'><span style='mso-bookmark:
+_Toc54191988'><span style='mso-bookmark:_Toc54192104'><span style='mso-bookmark:
+_Toc54192353'><span style='mso-bookmark:_Toc54192586'><span style='mso-bookmark:
+_Toc54193330'><span style='mso-bookmark:_Toc54855869'><span style='mso-bookmark:
+_Toc54861048'><span style='mso-bookmark:_Toc55028873'><span style='mso-bookmark:
+_Toc79847750'><span style='mso-bookmark:_Toc117269013'>Передача аргументов
+функции по умолчанию</span></span></span></span></span></span></span></span></span></span></span></span></a></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=GramE><span
+style='mso-bidi-font-size:12.0pt'>В</span></span><span style='mso-bidi-font-size:
+12.0pt'> <span class=GramE>С</span>++ поддерживается возможность задания
+некоторого числа аргументов по умолчанию. Это означает, что в заголовке функции
+некоторым параметрам при<span style='mso-spacerun:yes'>  </span>их описании
+присваиваются значения. При вызове данной функции число фактических параметров
+может быть меньше числа формальных параметров. В этом случае принимается
+умалчиваемое значение соответствующего параметра. Например:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>#<span class=SpellE>include</span> &quot;<span
+class=SpellE>iostream.h</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span class=GramE><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>int</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> <span class=SpellE>sm</span>(<span class=SpellE>int</span> i1, <span
+class=SpellE>int</span> i2, <span class=SpellE>int</span> i3=0, <span
+class=SpellE>int</span> i4=0)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>{ <span class=SpellE>cout</span>&lt;&lt;i1&lt;&lt;’
+’&lt;&lt;i2&lt;&lt;’ ’&lt;&lt;i3&lt;&lt;’ ’&lt;&lt;i4&lt;&lt;’ ’;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=GramE>return</span> i1+i2+i3+i4;
+}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>void</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>{ <span class=SpellE>cout</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> &lt;&lt;&quot;</span><span style='mso-bidi-font-size:12.0pt;font-family:
+"Courier New"'>сумма</span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> = &quot;&lt;&lt;<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>sm</span>(1,2) &lt;&lt; <span
+class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt;&quot;</span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>сумма</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'> = &quot;&lt;&lt;<span style='mso-spacerun:yes'> 
+</span><span class=SpellE>sm</span>(1,2,3) &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; &quot;</span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>сумма</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'> = &quot;&lt;&lt; <span class=SpellE>sm</span>(1,2,3,4)
+&lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Результатом работы программы будет:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>1<span style='mso-spacerun:yes'>  </span>2<span
+style='mso-spacerun:yes'>  </span>0<span style='mso-spacerun:yes'>  </span><span
+class=SpellE>0</span><span style='mso-spacerun:yes'>  </span>сумма =<span
+style='mso-spacerun:yes'>  </span>3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:36.0pt;text-indent:0cm'><span style='mso-bidi-font-size:
+12.0pt'>1<span style='mso-spacerun:yes'>  </span>2<span
+style='mso-spacerun:yes'>  </span>3<span style='mso-spacerun:yes'> 
+</span>0<span style='mso-spacerun:yes'>  </span>сумма = <span
+style='mso-spacerun:yes'> </span>6<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:36.0pt;text-indent:0cm'><span style='mso-bidi-font-size:
+12.0pt'>1<span style='mso-spacerun:yes'>  </span>2<span
+style='mso-spacerun:yes'>  </span>3<span style='mso-spacerun:yes'> 
+</span>4<span style='mso-spacerun:yes'>  </span>сумма = 10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-bidi-font-size:12.0pt'><span
+style='mso-tab-count:1'>         </span>Описание параметров по умолчанию должно
+находиться в конце списка формальных параметров (в заголовке функции). Задание
+параметров по умолчанию может быть выполнено только в прототипе функции или при
+его отсутствии в заголовке функции. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><a name="_Toc117269014"></a><a name="_Toc79847751"></a><a
+name="_Toc55028874"></a><a name="_Toc54861049"></a><a name="_Toc54855870"></a><a
+name="_Toc54193331"></a><a name="_Toc54192587"></a><a name="_Toc54192354"></a><a
+name="_Toc54192105"></a><a name="_Toc54191989"></a><a name="_Toc519256557"></a><a
+name="_Toc516652042"></a><a name="_Toc516651296"></a><a name="_Toc38620024"></a><a
+name="_Toc27374709"></a><a name="_Toc27374591"><span style='mso-bookmark:_Toc27374709'><span
+style='mso-bookmark:_Toc38620024'><span style='mso-bookmark:_Toc516651296'><span
+style='mso-bookmark:_Toc516652042'><span style='mso-bookmark:_Toc519256557'><span
+style='mso-bookmark:_Toc54191989'><span style='mso-bookmark:_Toc54192105'><span
+style='mso-bookmark:_Toc54192354'><span style='mso-bookmark:_Toc54192587'><span
+style='mso-bookmark:_Toc54193331'><span style='mso-bookmark:_Toc54855870'><span
+style='mso-bookmark:_Toc54861049'><span style='mso-bookmark:_Toc55028874'><span
+style='mso-bookmark:_Toc79847751'><span style='mso-bookmark:_Toc117269014'>Простейший
+ввод и вывод</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=GramE><span
+style='mso-bidi-font-size:12.0pt'>В</span></span><span style='mso-bidi-font-size:
+12.0pt'> <span class=GramE>С</span>++ ввод-вывод данных производится потоками
+байт. Поток (последовательность байт) - это логическое устройство, которое
+выдает и принимает информацию от пользователя и связано с физическими
+устройствами ввода-вывода. При операциях ввода байты направляются от устройства
+в основную память. В операциях вывода – наоборот.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Имеется четыре потока (связанных с ними объекта), обеспечивающих ввод и
+вывод информации и определенных в заголовочном файле <span class=SpellE>iostream.h</span>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cout</span></span><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>    </span>-<span
+style='mso-spacerun:yes'>  </span>поток стандартного вывода;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cin</span></span><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>      </span>-<span
+style='mso-spacerun:yes'>  </span>поток стандартного ввода;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cerr</span></span><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>    </span>-<span
+style='mso-spacerun:yes'>  </span>поток стандартной ошибки;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>clog</span></span><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>   </span>-<span
+style='mso-spacerun:yes'>  </span>буферизируемый поток стандартных ошибок.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269015"></a><a name="_Toc79847752"></a><a
+name="_Toc55028875"></a><a name="_Toc54861050"></a><a name="_Toc54855871"></a><a
+name="_Toc54193332"></a><a name="_Toc54192588"></a><a name="_Toc54192355"></a><a
+name="_Toc54192106"></a><a name="_Toc54191990"></a><a name="_Toc519256558"></a><a
+name="_Toc516652043"></a><a name="_Toc516651297"></a><a name="_Toc38620025"></a><a
+name="_Toc27374710"></a><a name="_Toc27374592"><span style='mso-bookmark:_Toc27374710'><span
+style='mso-bookmark:_Toc38620025'><span style='mso-bookmark:_Toc516651297'><span
+style='mso-bookmark:_Toc516652043'><span style='mso-bookmark:_Toc519256558'><span
+style='mso-bookmark:_Toc54191990'><span style='mso-bookmark:_Toc54192106'><span
+style='mso-bookmark:_Toc54192355'><span style='mso-bookmark:_Toc54192588'><span
+style='mso-bookmark:_Toc54193332'><span style='mso-bookmark:_Toc54855871'><span
+style='mso-bookmark:_Toc54861050'><span style='mso-bookmark:_Toc55028875'><span
+style='mso-bookmark:_Toc79847752'><span style='mso-bookmark:_Toc117269015'><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:normal;mso-bidi-font-style:
+normal'>Объект<span style='mso-spacerun:yes'>  </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc27374592'><span style='mso-bookmark:
+_Toc27374710'><span style='mso-bookmark:_Toc38620025'><span style='mso-bookmark:
+_Toc516651297'><span style='mso-bookmark:_Toc516652043'><span style='mso-bookmark:
+_Toc519256558'><span style='mso-bookmark:_Toc54191990'><span style='mso-bookmark:
+_Toc54192106'><span style='mso-bookmark:_Toc54192355'><span style='mso-bookmark:
+_Toc54192588'><span style='mso-bookmark:_Toc54193332'><span style='mso-bookmark:
+_Toc54855871'><span style='mso-bookmark:_Toc54861050'><span style='mso-bookmark:
+_Toc55028875'><span style='mso-bookmark:_Toc79847752'><span style='mso-bookmark:
+_Toc117269015'><span style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:
+normal;mso-bidi-font-style:normal'>cout</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc117269015'></span><span style='mso-bookmark:_Toc79847752'></span><span
+style='mso-bookmark:_Toc55028875'></span><span style='mso-bookmark:_Toc54861050'></span><span
+style='mso-bookmark:_Toc54855871'></span><span style='mso-bookmark:_Toc54193332'></span><span
+style='mso-bookmark:_Toc54192588'></span><span style='mso-bookmark:_Toc54192355'></span><span
+style='mso-bookmark:_Toc54192106'></span><span style='mso-bookmark:_Toc54191990'></span><span
+style='mso-bookmark:_Toc519256558'></span><span style='mso-bookmark:_Toc516652043'></span><span
+style='mso-bookmark:_Toc516651297'></span><span style='mso-bookmark:_Toc38620025'></span><span
+style='mso-bookmark:_Toc27374710'></span><span style='mso-bookmark:_Toc27374592'></span><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:normal;mso-bidi-font-style:
+normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Объект <span class=SpellE>cout</span> позволяет выводить информацию на
+стандартное устройство вывода – экран. Формат записи <span class=SpellE>cout</span>
+имеет следующий вид: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>сout</span></span><span style='mso-bidi-font-size:
+12.0pt'> &lt;&lt; <span class=SpellE>data</span> <span class=GramE>[ </span>&lt;&lt;
+<span class=SpellE>data</span>];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>data</span></span><span style='mso-bidi-font-size:
+12.0pt'> - это переменные, константы, выражения или комбинации всех трех типов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Простейший пример применения <span class=SpellE>cout</span> - это
+вывод, например, символьной строки:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cout</span></span><span style='mso-bidi-font-size:
+12.0pt'> &lt;&lt;<span style='mso-spacerun:yes'> 
+</span>”объектно-ориентированное программирование ”;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cout</span></span><span style='mso-bidi-font-size:
+12.0pt'> &lt;&lt;<span style='mso-spacerun:yes'>  </span>”программирование на<span
+class=GramE> С</span>++”.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Надо помнить, что <span class=SpellE>cout</span> не выполняет
+автоматический переход на новую строку после вывода информации. Для перевода
+курсора на новую строку надо вставлять символ ’\<span class=SpellE>n</span>’
+или манипулятор <span class=SpellE>endl</span>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cout</span></span><span style='mso-bidi-font-size:
+12.0pt'> &lt;&lt;<span style='mso-spacerun:yes'>  </span>”объектно-ориентированное
+программирование \<span class=SpellE>n</span>”;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cout</span></span><span style='mso-bidi-font-size:
+12.0pt'> &lt;&lt;<span style='mso-spacerun:yes'>  </span>”программирование на<span
+class=GramE> С</span>++”&lt;&lt;<span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Для управления выводом информации используются манипуляторы.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h4 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><a name="_Toc117269016"></a><a name="_Toc79847753"></a><a
+name="_Toc55028876"></a><a name="_Toc54861051"></a><a name="_Toc54855872"></a><a
+name="_Toc516651298"></a><a name="_Toc38620026"></a><a name="_Toc27374711"></a><a
+name="_Toc27374593"><span style='mso-bookmark:_Toc27374711'><span
+style='mso-bookmark:_Toc38620026'><span style='mso-bookmark:_Toc516651298'><span
+style='mso-bookmark:_Toc54855872'><span style='mso-bookmark:_Toc54861051'><span
+style='mso-bookmark:_Toc55028876'><span style='mso-bookmark:_Toc79847753'><span
+style='mso-bookmark:_Toc117269016'>Манипуляторы </span></span></span></span></span></span></span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc27374593'><span style='mso-bookmark:
+_Toc27374711'><span style='mso-bookmark:_Toc38620026'><span style='mso-bookmark:
+_Toc516651298'><span style='mso-bookmark:_Toc54855872'><span style='mso-bookmark:
+_Toc54861051'><span style='mso-bookmark:_Toc55028876'><span style='mso-bookmark:
+_Toc79847753'><span style='mso-bookmark:_Toc117269016'>hex</span></span></span></span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc27374593'><span style='mso-bookmark:_Toc27374711'><span
+style='mso-bookmark:_Toc38620026'><span style='mso-bookmark:_Toc516651298'><span
+style='mso-bookmark:_Toc54855872'><span style='mso-bookmark:_Toc54861051'><span
+style='mso-bookmark:_Toc55028876'><span style='mso-bookmark:_Toc79847753'><span
+style='mso-bookmark:_Toc117269016'> и <span class=SpellE>oct</span></span></span></span></span></span></span></span></span></span></h4>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Манипуляторы <span class=SpellE>hex</span> и <span class=SpellE>oct</span>
+используются для вывода числовой информации в шестнадцатеричном или восьмеричном
+представлении. Применение их можно видеть на примере следующей простой
+программы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>#<span class=SpellE>include</span><span
+style='mso-spacerun:yes'>  </span>&lt;<span class=SpellE>iostream.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'>void</span></span><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'> <span class=SpellE>main</span>()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'>{ <span class=SpellE>int</span> a=0x11,
+b=4,<span style='mso-spacerun:yes'>    </span>//<span
+style='mso-spacerun:yes'>  </span>целые числа шестнадцатеричное и десятичное</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>        </span>c=051,
+d=8,<span style='mso-spacerun:yes'>      </span>//<span
+style='mso-spacerun:yes'>    </span>--//--<span
+style='mso-spacerun:yes'>             </span>восьмеричное и десятичное <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>i,j</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>   </span></span><span
+class=SpellE><span lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:
+"Courier New";mso-ansi-language:EN-US'>i</span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>=<span class=SpellE>a+b</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span>j=<span class=SpellE>c+d</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>i</span><span style='mso-spacerun:yes'> 
+</span>&lt;&lt;' <span class=SpellE>'</span> &lt;&lt;hex &lt;&lt; <span
+class=SpellE>i</span> &lt;&lt;' '&lt;&lt;<span class=SpellE>oct</span> &lt;&lt;
+<span class=SpellE>i</span> &lt;&lt;' <span class=SpellE>'</span> &lt;&lt;<span
+class=SpellE>dec</span> &lt;&lt; <span class=SpellE>i</span> &lt;&lt;<span
+class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt;hex &lt;&lt; j &lt;&lt;' <span class=SpellE>'</span> &lt;&lt; j
+&lt;&lt;' '&lt;&lt;<span class=SpellE>dec</span> &lt;&lt; j &lt;&lt;' <span
+class=SpellE>'</span> &lt;&lt; <span class=SpellE>oct</span> &lt;&lt; j
+&lt;&lt;<span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>В результате выполнения программы на экран будет выведена следующая
+информация:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:36.0pt;text-indent:0cm'><span style='mso-bidi-font-size:
+12.0pt'>21<span style='mso-spacerun:yes'>  </span>15<span
+style='mso-spacerun:yes'>  </span>25<span style='mso-spacerun:yes'>  </span>21<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:57.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 57.0pt'><![if !supportLists]><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-list:Ignore'>31<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-bidi-font-size:12.0pt'>31<span
+style='mso-spacerun:yes'>  </span>49<span style='mso-spacerun:yes'>  </span>61<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:36.0pt;text-indent:0cm'><span style='mso-bidi-font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h4 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><a name="_Toc117269017"></a><a name="_Toc516651299"></a><a
+name="_Toc38620027"></a><a name="_Toc27374712"></a><a name="_Toc27374594"><span
+style='mso-bookmark:_Toc27374712'><span style='mso-bookmark:_Toc38620027'><span
+style='mso-bookmark:_Toc516651299'><span style='mso-bookmark:_Toc117269017'>Другие
+манипуляторы</span></span></span></span></a><span style='mso-bookmark:_Toc117269017'></span><span
+style='mso-bookmark:_Toc516651299'></span><span style='mso-bookmark:_Toc38620027'></span><span
+style='mso-bookmark:_Toc27374712'></span><span style='mso-bookmark:_Toc27374594'></span><span
+style='font-weight:normal;font-style:normal'><o:p></o:p></span></h4>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Манипуляторы изменяют значение некоторых переменных в объекте <span
+class=SpellE>cout</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Эти переменные называются флагами состояния. Когда объект посылает
+данные на экран, он проверяет эти флаги.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'>Рассмотрим манипуляторы, позволяющие
+выполнять форматирование выводимой на экран информации:</p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#<span class=GramE>include<span
+style='mso-spacerun:yes'>  </span>&lt;</span><span class=SpellE>iostream.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#<span class=GramE>include<span
+style='mso-spacerun:yes'>  </span>&lt;</span><span class=SpellE>iomanip.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>void</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>{ <span class=SpellE>int</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> a=0x11;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=GramE>double</span> d=12.362;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>setw</span>(4) &lt;&lt; a &lt;&lt; <span
+class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>setw</span>(10) &lt;&lt; <span class=SpellE>setfill</span>('*')
+&lt;&lt; a &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>setw</span>(10 ) &lt;&lt; <span class=SpellE>setfill</span>('
+<span class=SpellE>'</span>) &lt;&lt; <span class=SpellE>setprecision</span>(3)
+&lt;&lt; d &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Результат работы программы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>    </span>17<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>********17<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>           </span>12.4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>В приведенной программе использованы манипуляторы<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>setw</span>(), <span
+class=SpellE>setfill</span>(' <span class=SpellE>'</span>) и <span
+class=SpellE>setprecision</span>(). Синтаксис<span style='mso-spacerun:yes'> 
+</span>их показывает, что это<span style='mso-spacerun:yes'>  </span>функции.
+На самом деле это <i style='mso-bidi-font-style:normal'>компоненты-функции</i>
+(рассмотрим позже), позволяющие изменять флаги состояния объекта <span
+class=SpellE>cout</span>. Для их использования необходим заголовочный файл <span
+class=SpellE>iomanip.h</span>. Функция <span class=SpellE>setw</span>(4)
+обеспечивает вывод значения переменной <span class=SpellE>a</span> в 4 позиции
+(по умолчанию выравнивание вправо). Функция <span class=SpellE>setfil</span>(’символ’)
+заполняет пустые позиции символом. Функция <span class=SpellE>setprecision</span>(<span
+class=SpellE>n</span>) обеспечивает вывод числа с плавающей запятой с точностью
+до <span class=SpellE>n</span> знаков после запятой (при необходимости
+производится округление дробной части). Если при этом не установлен формат
+вывода с плавающей запятой, то точность указывает общее количество значащих
+цифр. Заданная по умолчанию точность - шесть цифр.<span
+style='mso-spacerun:yes'>  </span>Таким образом, функции имеют следующий
+формат:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><b><span
+style='mso-bidi-font-size:12.0pt'>setw</span></b></span><b><span
+style='mso-bidi-font-size:12.0pt'>(<span class=SpellE>количество_позиций_для_вывода_числа</span>)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><b><span
+style='mso-bidi-font-size:12.0pt'>setfil</span></b></span><b><span
+style='mso-bidi-font-size:12.0pt'>(<span class=SpellE>символ_для_заполнения_пустых_позиций</span>)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><b><span
+style='mso-bidi-font-size:12.0pt'>setprecision</span></b></span><b><span
+style='mso-bidi-font-size:12.0pt'> (<span class=SpellE>точность_при_выводе_дробного_числа</span>)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Наряду с перечисленными выше манипуляторами в<span class=GramE> С</span>++
+используются также манипуляторы <span class=SpellE><b>setiosflags</b></span>()
+и <span class=SpellE><b>resetiosflags</b></span>() для установки определенных
+глобальных флагов, используемых при вводе и выводе информации. На эти флаги
+ссылаются как на <i style='mso-bidi-font-style:normal'>переменные состояния</i>.
+Функция <span class=SpellE>setiosflags</span>() устанавливает указанные в ней
+флаги, а <span class=SpellE>resetiosflags</span>() сбрасывает (очищает) их. В
+приведенной ниже таблице показаны аргументы для этих функций.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span
+style='mso-spacerun:yes'>                                                                                                  
+</span>Таблица 1<span style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=634
+ style='width:475.15pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid windowtext .5pt;mso-padding-alt:0cm 1.4pt 0cm 1.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span style='mso-bidi-font-size:
+  12.0pt'>Значение<o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'><span style='mso-spacerun:yes'>            </span>Результат, если
+  значение установлено<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::skipws</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'>Игнорирует пустое пространство
+  при вводе</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::left</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод с выравниванием слева<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::right</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод с выравниванием справа<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::internal</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Заполнять пространство после знака или основания <span class=GramE>с</span>/с<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::dec</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод в десятичном формате<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::oct</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод в восьмеричном формате<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::hex</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод в шестнадцатеричном формате<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::boolalpha</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Вывод булевых значений в виде TRUE и FALSE<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::showbase</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Выводить основание системы счисления<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::showpoint</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Выводить десятичную точку<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::uppercase</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Выводить шестнадцатеричные числа заглавными буквами<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::showpos</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Выводить + перед положительными целыми числами<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::scientific</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Использовать форму вывода с плавающей запятой<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::fixed</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Использовать форму вывода с фиксированной запятой<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::unitbuf</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Сброс после каждой операции вывода<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+  <td width=142 valign=top style='width:106.6pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 1.4pt 0cm 0cm'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:14.45pt'><span class=SpellE><span
+  style='mso-bidi-font-size:12.0pt'>ios::sktdio</span></span><span
+  style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=491 valign=top style='width:13.0cm;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 1.4pt 0cm 1.4pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;text-indent:12.75pt'><span style='mso-bidi-font-size:
+  12.0pt'>Сброс после каждого символа<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Как видно из таблицы, флаги формата объявлены в классе <span
+class=SpellE><b style='mso-bidi-font-weight:normal'>ios</b></span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><span style='mso-bidi-font-size:12.0pt'><span
+style='mso-tab-count:1'>         </span>Пример программы, в которой
+использованы манипуляторы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#<span class=GramE>include<span
+style='mso-spacerun:yes'>  </span>&lt;</span><span class=SpellE>iostream.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#<span class=GramE>include<span
+style='mso-spacerun:yes'>  </span>&lt;</span><span class=SpellE>iomanip.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>void</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>{ char</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> s[]=&quot;</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>БГУИР</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>факультет</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> </span><span class=SpellE><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>КСиС</span></span><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>&quot;;<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>setw</span>(30) &lt;&lt; <span class=SpellE>setiosflags</span>(<span
+class=SpellE>ios::right</span>) &lt;&lt; s &lt;&lt; <span class=SpellE>endl</span>;<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; <span class=SpellE>setw</span>(30) &lt;&lt; <span class=SpellE>setiosflags</span>(<span
+class=SpellE>ios::left</span>) &lt;&lt; s &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Результат работы программы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><span style='mso-spacerun:yes'>                </span>БГУИР<span
+style='mso-spacerun:yes'>  </span>факультет <span class=SpellE>КСиС</span> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>БГУИР<span style='mso-spacerun:yes'>  </span>факультет <span
+class=SpellE>КСиС</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Наряду с манипуляторами <span class=SpellE>setiosflags</span>() и <span
+class=SpellE>resetiosflags</span>(), для того чтобы установить или сбросить
+некоторый флаг, могут быть использованы функции класса <span class=SpellE>ios</span><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><b>setf</b></span>() или <span
+class=SpellE><b>unsetf</b></span>(). Например</span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#include &lt;<span
+class=SpellE>iostream.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#include &lt;<span
+class=SpellE>string.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span class=GramE><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>int</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>{ char</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> *s=&quot;</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>Я</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> </span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>изучаю</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><span style='mso-spacerun:yes'>  </span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>С</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>++&quot;;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout.setf</span></span><span
+class=GramE>(</span><span class=SpellE>ios::uppercase</span> | <span
+class=SpellE>ios::showbase</span> | <span class=SpellE>ios::hex</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; 88 &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout.unsetf</span></span><span
+class=GramE>(</span><span class=SpellE>ios::uppercase</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; 88 &lt;&lt; <span class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout.unsetf</span></span><span
+class=GramE>(</span><span class=SpellE>ios::uppercase</span> | <span
+class=SpellE>ios::showbase</span> | <span class=SpellE>ios::hex</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout.setf</span></span><span
+class=GramE>(</span><span class=SpellE>ios::dec</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>int</span></span>
+<span class=SpellE>len</span> = 10 + <span class=SpellE>strlen</span>(s);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout.width</span></span><span
+class=GramE>(</span><span class=SpellE>len</span>); <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; s &lt;&lt; <span class=SpellE>endl</span>; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>cout</span></span>
+&lt;&lt; 88 &lt;&lt; &quot; hello C++ &quot; &lt;&lt; 345.67 &lt;&lt; <span
+class=SpellE>endl</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=GramE>return</span> 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Результат работы программы:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:19.85pt'><span style='mso-bidi-font-size:12.0pt'>0X58<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:19.85pt'><span style='mso-bidi-font-size:12.0pt'>0x58<span
+style='mso-spacerun:yes'>         </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:19.85pt'><span style='mso-bidi-font-size:12.0pt'><span
+style='mso-spacerun:yes'>                </span>Я изучаю<span class=GramE><span
+style='mso-spacerun:yes'>  </span>С</span>++<span
+style='mso-spacerun:yes'>          </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>88<span style='mso-spacerun:yes'>  </span><span class=SpellE>hello</span>
+C++<span style='mso-spacerun:yes'>  </span>345.67<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h3 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm;text-indent:36.0pt'><a name="_Toc117269018"></a><a name="_Toc79847754"></a><a
+name="_Toc55028877"></a><a name="_Toc54861052"></a><a name="_Toc54855873"></a><a
+name="_Toc54193333"></a><a name="_Toc54192589"></a><a name="_Toc54192356"></a><a
+name="_Toc54192107"></a><a name="_Toc54191991"></a><a name="_Toc519256559"></a><a
+name="_Toc516652044"></a><a name="_Toc516651300"></a><a name="_Toc38620028"></a><a
+name="_Toc27374713"></a><a name="_Toc27374595"><span style='mso-bookmark:_Toc27374713'><span
+style='mso-bookmark:_Toc38620028'><span style='mso-bookmark:_Toc516651300'><span
+style='mso-bookmark:_Toc516652044'><span style='mso-bookmark:_Toc519256559'><span
+style='mso-bookmark:_Toc54191991'><span style='mso-bookmark:_Toc54192107'><span
+style='mso-bookmark:_Toc54192356'><span style='mso-bookmark:_Toc54192589'><span
+style='mso-bookmark:_Toc54193333'><span style='mso-bookmark:_Toc54855873'><span
+style='mso-bookmark:_Toc54861052'><span style='mso-bookmark:_Toc55028877'><span
+style='mso-bookmark:_Toc79847754'><span style='mso-bookmark:_Toc117269018'><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:normal;mso-bidi-font-style:
+normal'>Объект<span style='mso-spacerun:yes'>  </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc27374595'><span style='mso-bookmark:
+_Toc27374713'><span style='mso-bookmark:_Toc38620028'><span style='mso-bookmark:
+_Toc516651300'><span style='mso-bookmark:_Toc516652044'><span style='mso-bookmark:
+_Toc519256559'><span style='mso-bookmark:_Toc54191991'><span style='mso-bookmark:
+_Toc54192107'><span style='mso-bookmark:_Toc54192356'><span style='mso-bookmark:
+_Toc54192589'><span style='mso-bookmark:_Toc54193333'><span style='mso-bookmark:
+_Toc54855873'><span style='mso-bookmark:_Toc54861052'><span style='mso-bookmark:
+_Toc55028877'><span style='mso-bookmark:_Toc79847754'><span style='mso-bookmark:
+_Toc117269018'><span style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:
+normal;mso-bidi-font-style:normal'>cin</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc117269018'></span><span style='mso-bookmark:_Toc79847754'></span><span
+style='mso-bookmark:_Toc55028877'></span><span style='mso-bookmark:_Toc54861052'></span><span
+style='mso-bookmark:_Toc54855873'></span><span style='mso-bookmark:_Toc54193333'></span><span
+style='mso-bookmark:_Toc54192589'></span><span style='mso-bookmark:_Toc54192356'></span><span
+style='mso-bookmark:_Toc54192107'></span><span style='mso-bookmark:_Toc54191991'></span><span
+style='mso-bookmark:_Toc519256559'></span><span style='mso-bookmark:_Toc516652044'></span><span
+style='mso-bookmark:_Toc516651300'></span><span style='mso-bookmark:_Toc38620028'></span><span
+style='mso-bookmark:_Toc27374713'></span><span style='mso-bookmark:_Toc27374595'></span><span
+style='mso-bidi-font-size:12.0pt;mso-bidi-font-weight:normal;mso-bidi-font-style:
+normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Для ввода информации с клавиатуры используется объект <span
+class=SpellE>cin</span>. Формат записи <span class=SpellE>cin</span> имеет
+следующий вид:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>cin</span></span><span style='mso-bidi-font-size:
+12.0pt'> [&gt;&gt;<span class=SpellE>имя_переменной</span>];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Объект <span class=SpellE>cin</span> имеет некоторые недостатки.
+Необходимо, чтобы данные вводились в соответствии с форматом переменных, что не
+всегда может быть гарантировано. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;margin-left:
+0cm'><a name="_Toc117269019"></a><a name="_Toc79847755"></a><a
+name="_Toc55028878"></a><a name="_Toc54861053"></a><a name="_Toc54855874"></a><a
+name="_Toc54193334"></a><a name="_Toc54192590"></a><a name="_Toc54192357"></a><a
+name="_Toc54192108"></a><a name="_Toc54191992"></a><a name="_Toc519256560"></a><a
+name="_Toc516652045"></a><a name="_Toc516651301"></a><a name="_Toc38620029"></a><a
+name="_Toc27374714"></a><a name="_Toc27374596"><span style='mso-bookmark:_Toc27374714'><span
+style='mso-bookmark:_Toc38620029'><span style='mso-bookmark:_Toc516651301'><span
+style='mso-bookmark:_Toc516652045'><span style='mso-bookmark:_Toc519256560'><span
+style='mso-bookmark:_Toc54191992'><span style='mso-bookmark:_Toc54192108'><span
+style='mso-bookmark:_Toc54192357'><span style='mso-bookmark:_Toc54192590'><span
+style='mso-bookmark:_Toc54193334'><span style='mso-bookmark:_Toc54855874'><span
+style='mso-bookmark:_Toc54861053'><span style='mso-bookmark:_Toc55028878'><span
+style='mso-bookmark:_Toc79847755'><span style='mso-bookmark:_Toc117269019'>Операторы
+для динамического выделения и освобождения памяти (</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></a><span
+style='mso-bookmark:_Toc27374596'><span style='mso-bookmark:_Toc27374714'><span
+style='mso-bookmark:_Toc38620029'><span style='mso-bookmark:_Toc516651301'><span
+style='mso-bookmark:_Toc516652045'><span style='mso-bookmark:_Toc519256560'><span
+style='mso-bookmark:_Toc54191992'><span style='mso-bookmark:_Toc54192108'><span
+style='mso-bookmark:_Toc54192357'><span style='mso-bookmark:_Toc54192590'><span
+style='mso-bookmark:_Toc54193334'><span style='mso-bookmark:_Toc54855874'><span
+style='mso-bookmark:_Toc54861053'><span style='mso-bookmark:_Toc55028878'><span
+style='mso-bookmark:_Toc79847755'><span style='mso-bookmark:_Toc117269019'><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>new</span><span
+style='mso-no-proof:yes'> и </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span
+style='mso-bookmark:_Toc27374596'><span style='mso-bookmark:_Toc27374714'><span
+style='mso-bookmark:_Toc38620029'><span style='mso-bookmark:_Toc516651301'><span
+style='mso-bookmark:_Toc516652045'><span style='mso-bookmark:_Toc519256560'><span
+style='mso-bookmark:_Toc54191992'><span style='mso-bookmark:_Toc54192108'><span
+style='mso-bookmark:_Toc54192357'><span style='mso-bookmark:_Toc54192590'><span
+style='mso-bookmark:_Toc54193334'><span style='mso-bookmark:_Toc54855874'><span
+style='mso-bookmark:_Toc54861053'><span style='mso-bookmark:_Toc55028878'><span
+style='mso-bookmark:_Toc79847755'><span style='mso-bookmark:_Toc117269019'><span
+lang=EN-US style='mso-ansi-language:EN-US;mso-no-proof:yes'>delete</span>)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Различают два типа памяти: статическую и динамическую. В статической
+памяти размещаются локальные и глобальные данные при их описании в функциях.
+Для временного хранения данных в памяти ЭВМ используется динамическая память,
+или <span class=SpellE>heap</span>. Размер этой памяти ограничен, и запрос на
+динамическое выделение памяти может быть выполнен далеко не всегда.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Для работы с динамической памятью в языке<span class=GramE> С</span>
+использовались функции: <span class=SpellE>calloc</span>, <span class=SpellE>malloc</span>,
+<span class=SpellE>realloc</span>, <span class=SpellE>free</span> и другие. <span
+class=GramE>В</span> <span class=GramE>С</span>++ для выделения памяти можно
+также использовать встроенные операторы <span class=SpellE><b>new</b></span> и <span
+class=SpellE><b>delete</b></span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:12.0pt'>Оператор <span class=SpellE>new</span></span></b><span
+style='mso-bidi-font-size:12.0pt'> имеет один операнд. Оператор имеет две формы
+записи:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b><span style='font-size:12.0pt'>[::]
+<span class=SpellE>new</span> [(<span class=SpellE>список_аргументов</span>)]<span
+style='mso-spacerun:yes'>  </span><span class=SpellE>имя_типа</span><span
+style='mso-spacerun:yes'>  </span>[(<span class=SpellE>инициализирующее_значение</span>)]<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b><span style='font-size:12.0pt'>[::]
+<span class=SpellE>new</span> [(<span class=SpellE>список_аргументов</span>)] (<span
+class=SpellE>имя_типа</span>)<span style='mso-spacerun:yes'>  </span>[(<span
+class=SpellE>инициализирующее_значение</span>)]<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>В простейшем виде оператор <span class=SpellE>new</span> можно
+записать:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt'>new</span></span><span style='mso-bidi-font-size:
+12.0pt'> <span class=SpellE>имя_типа</span><span
+style='mso-spacerun:yes'>                  </span>или<span
+style='mso-spacerun:yes'>                   </span><span class=SpellE>new</span>
+(<span class=SpellE>имя_типа</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Оператор <span class=SpellE>new</span> возвращает указатель на объект
+типа <span class=SpellE>имя_типа</span>, для которого выполняется выделение
+памяти.<span style='mso-spacerun:yes'>  </span>Например:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>char</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> *<span
+class=SpellE>str</span>;<span style='mso-spacerun:yes'>      </span><span
+style='mso-spacerun:yes'> </span>// <span class=SpellE>str</span> – указатель
+на объект типа<span style='mso-spacerun:yes'>  </span><span class=SpellE>char</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>str=new</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> <span
+class=SpellE>char</span>;<span style='mso-spacerun:yes'>    </span>// выделение
+памяти под объект типа <span class=SpellE>char</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>или<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>str=new</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> (<span
+class=SpellE>char</span>);<span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>В качестве аргументов можно использовать как стандартные типы данных,
+так и определенные пользователем. В этом случае именем типа будет имя структуры
+или класса. Если память не может быть выделена, оператор <span class=SpellE>new</span>
+возвращает значение NULL.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Оператор <span class=SpellE>new</span> позволяет выделять память под
+массивы. Он возвращает указатель на первый элемент массива в квадратных
+скобках.<span style='mso-spacerun:yes'>  </span>Например:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>int</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'><span
+style='mso-spacerun:yes'>  </span>*<span class=SpellE>n</span>;<span
+style='mso-spacerun:yes'>                 </span><span
+style='mso-spacerun:yes'>  </span>//<span style='mso-spacerun:yes'>   </span><span
+class=SpellE>n</span> – указатель на целое<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>n=new</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> <span
+class=SpellE>int</span>[20];<span style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>      </span>//<span style='mso-spacerun:yes'>  
+</span>выделение памяти для массива<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>При выделении памяти под многомерные массивы все размерности кроме
+крайней левой должны быть константами. Первая размерность может быть задана
+переменной, значение которой к моменту использования <span class=SpellE>new</span>
+известно пользователю, например:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>k=3;<span
+style='mso-spacerun:yes'>            </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+class=GramE><span lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>int</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> *p[]=new <span class=SpellE>int</span>[k][5];<span
+style='mso-spacerun:yes'>     </span>// </span><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'>ошибка</span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'><span style='mso-spacerun:yes'>  </span>cannot convert from '<span
+class=SpellE>int</span> (*)[5]' to '<span class=SpellE>int</span> *[]'<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+class=GramE><span lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>int</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> (*p)[]=new <span class=SpellE>int</span>[k][5];<span
+style='mso-spacerun:yes'>   </span>//<span style='mso-spacerun:yes'>  </span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>верно</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>При выделении памяти под объект его значение будет неопределенным.
+Однако объекту можно присвоить начальное значение.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>int</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> *<span
+class=SpellE>a</span> = <span class=SpellE>new</span> <span class=SpellE>int</span>
+(10234);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Этот параметр нельзя использовать для инициализации массивов. Однако на
+место инициализирующего значения можно поместить через запятую список значений,
+передаваемых конструктору при выделении памяти под массив (массив новых
+объектов, заданных пользователем). Память под массив объектов может быть
+выделена только в том случае, если у соответствующего класса имеется
+конструктор, заданный по умолчанию.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><b><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>class</span></b></span><b><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'> <span class=SpellE>matr</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='font-family:"Courier New";
+mso-ansi-language:EN-US'>{<span style='mso-spacerun:yes'>    </span><span
+class=SpellE><span class=GramE>int</span></span> a;</span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'><span style='mso-spacerun:yes'>      </span>float b;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>  </span><span class=GramE>public</span>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE><span class=GramE>matr</span></span><span
+class=GramE>(</span>){};<span
+style='mso-spacerun:yes'>                               </span>// </span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>конструктор</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> </span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>по</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> </span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>умолчанию</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span><span class=SpellE><span class=GramE>matr</span></span><span
+class=GramE>(</span><span class=SpellE>int</span> <span class=SpellE>i,float</span>
+j): a(<span class=SpellE>i</span>),b(j) {}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>     </span>~<span class=SpellE><span class=GramE>matr</span></span><span
+class=GramE>(</span>){};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>void</span></span><span lang=EN-US style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> main()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>{ <span class=SpellE>matr</span></span></span><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> <span class=SpellE>mt</span>(3,.5);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>matr</span></span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> *</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>p</span><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>1=</span><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>new</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'> </span><span
+class=SpellE><span lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:
+"Courier New";mso-ansi-language:EN-US'>matr</span></span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>[2];<span
+style='mso-spacerun:yes'>              </span>//<span
+style='mso-spacerun:yes'>  </span>верно<span style='mso-spacerun:yes'>     
+</span>р1 - указатель на 2 объекта<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>   </span><span
+class=SpellE>matr</span> *p2=new <span class=SpellE>matr</span>[2] (2,3.4)<span
+class=GramE> ;</span><span style='mso-spacerun:yes'>  </span>//<span
+style='mso-spacerun:yes'>  </span>неверно,<span style='mso-spacerun:yes'> 
+</span>невозможна инициализация<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>   </span><span
+class=SpellE>matr</span> *p3=new <span class=SpellE>matr</span><span
+style='mso-spacerun:yes'>  </span>(2,3.4);<span style='mso-spacerun:yes'>     
+</span>// верно р3 – инициализированный объект <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Следует отметить, что конструктор по умолчанию в примере требуется при
+использовании оператора<span style='mso-spacerun:yes'>   </span><span
+class=SpellE>new</span> <span class=SpellE>matr</span>[2].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Использование знака<span class=GramE> :: </span>перед оператором <span
+class=SpellE>new</span> указывает на вызов глобальной версии оператора <span
+class=SpellE>new</span>. Оператор <span class=SpellE>new</span> вызывает
+функцию <span class=SpellE>operator</span> <span class=SpellE>new</span>().
+Аргумент <span class=SpellE>имя_типа</span> используется для автоматического
+вычисления размера памяти <span class=SpellE>sizeof</span>(<span class=SpellE>имя_типа</span>),
+то есть инструкция типа <span class=SpellE>new</span> <span class=SpellE>имя_типа</span>
+приводит к вызову функции:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span class=GramE><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>operator</span></span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'> new(<span
+class=SpellE>sizeof</span>(</span><span style='mso-bidi-font-size:12.0pt'>имя</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;mso-ansi-language:EN-US'>_</span><span
+style='mso-bidi-font-size:12.0pt'>типа</span><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;mso-ansi-language:EN-US'>));<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Далее, в подразделе «Перегрузка операторов»,<span
+style='mso-spacerun:yes'>  </span>будет рассмотрен случай использования
+доопределенного оператора <span class=SpellE>new</span> для некоторого класса. <span
+class=SpellE>Доопределение</span> оператора <span class=SpellE>new</span>
+позволяет расширить возможности выделения памяти для объектов (их компонент)
+данного класса.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Создание объекта с помощью операции <span class=SpellE>new</span>
+вызывает также выполнение конструктора для этого объекта. Если в <span
+class=SpellE>new</span> не указан список инициализации либо он пуст (только
+скобки), то выполняется конструктор по умолчанию (<span class=SpellE>default</span>),
+который будет рассмотрен ниже. Если имеется непустой список инициализации, то
+выполняется тот конструктор, для которого этот список соответствует списку
+аргументов. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>При создании массива выполняется стандартный конструктор для каждого
+элемента.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><a name="_Toc27374598"><span
+style='mso-bidi-font-size:12.0pt'>Отметим преимущества использования оператора </span></a><span
+class=SpellE><span style='mso-bookmark:_Toc27374598'><span style='mso-bidi-font-size:
+12.0pt'>new</span></span></span><span style='mso-bookmark:_Toc27374598'><span
+style='mso-bidi-font-size:12.0pt'> перед использованием <span class=SpellE>malloc</span>():</span></span><span
+style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:35.45pt;mso-list:l1 level1 lfo4;tab-stops:
+list 0cm left 49.65pt list 90.0pt'><a name="_Toc27374599"><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:12.0pt'>оператор </span></a><span class=SpellE><span
+style='mso-bookmark:_Toc27374599'><span style='mso-bidi-font-size:12.0pt'>new</span></span></span><span
+style='mso-bookmark:_Toc27374599'><span style='mso-bidi-font-size:12.0pt'>
+автоматически вычисляет размер необходимой памяти. Не требуется использование
+оператора <span class=SpellE>sizeof</span>(). При этом он предотвращает
+выделение неверного объема памяти;</span></span><span style='mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:35.45pt;mso-list:l1 level1 lfo4;tab-stops:
+list 0cm left 49.65pt list 90.0pt'><a name="_Toc27374600"><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:12.0pt'>оператор </span></a><span class=SpellE><span
+style='mso-bookmark:_Toc27374600'><span style='mso-bidi-font-size:12.0pt'>new</span></span></span><span
+style='mso-bookmark:_Toc27374600'><span style='mso-bidi-font-size:12.0pt'>
+автоматически возвращает указатель требуемого типа (не требуется использование
+оператора преобразования типа);</span></span><span style='mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:35.45pt;mso-list:l1 level1 lfo4;tab-stops:
+list 0cm left 49.65pt list 90.0pt'><a name="_Toc27374601"><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:12.0pt'>имеется возможность инициализации объекта;</span></a><span
+style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:35.45pt;mso-list:l1 level1 lfo4;tab-stops:
+list 0cm left 49.65pt list 90.0pt'><a name="_Toc27374602"><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt'><span style='mso-list:Ignore'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:12.0pt'>можно выполнить перегрузку оператора </span></a><span
+class=SpellE><span style='mso-bookmark:_Toc27374602'><span style='mso-bidi-font-size:
+12.0pt'>new</span></span></span><span style='mso-bookmark:_Toc27374602'><span
+style='mso-bidi-font-size:12.0pt'> (<span class=SpellE>delete</span>) глобально
+или по отношению к тому классу, в котором он используется.</span></span><span
+style='mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Для разрушения объекта, созданного с помощью оператора <span
+class=SpellE>new</span>, необходимо использовать в программе оператор <span
+class=SpellE>delete</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-size:12.0pt'>Оператор <span class=SpellE>delete</span></span></b><span
+style='mso-bidi-font-size:12.0pt'> имеет две формы записи:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b><span style='mso-bidi-font-size:
+12.0pt'>[::] <span class=SpellE>delete</span><span style='mso-spacerun:yes'> 
+</span><span class=SpellE>переменная_указатель</span><span
+style='mso-spacerun:yes'>        </span></span></b><span style='mso-bidi-font-size:
+12.0pt'>// для указателя на один элемент<b> <o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><b><span style='mso-bidi-font-size:
+12.0pt'>[::] <span class=SpellE>delete</span> [] <span class=SpellE>переменная_указатель</span><span
+style='mso-spacerun:yes'>      </span></span></b><span style='mso-bidi-font-size:
+12.0pt'>// для указателя на массив<b> <o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Единственный операнд в операторе <span class=SpellE>delete</span>
+должен быть указателем, возвращаемым оператором <span class=SpellE>new</span>.
+Если оператор <span class=SpellE>delete</span> применить к указателю,
+полученному не посредством оператора <span class=SpellE>new</span>, то
+результат будет непредсказуем.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>Использование оператора <span class=SpellE>delete</span> вместо <span
+class=SpellE>delete</span>[] по отношению к указателю на массив может привести
+к логическим ошибкам. Таким образом, освобождать память, выделенную для
+массива, необходимо оператором <span class=SpellE>delete</span> [], а для
+отдельного элемента - оператором <span class=SpellE>delete</span>. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>#include &lt;<span
+class=SpellE>iostream.h</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=GramE><b><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'>class</span></b></span><b><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'> A<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'>{<span
+style='mso-spacerun:yes'>   </span><span class=SpellE><span class=GramE>int</span></span>
+<span class=SpellE>i</span>;<span
+style='mso-spacerun:yes'>                      </span>// </span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>компонента</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'>-</span><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>данное</span><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New";mso-ansi-language:EN-US'> </span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>класса</span><span
+style='mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-ansi-language:
+EN-US'> </span><span style='mso-bidi-font-size:12.0pt;font-family:"Courier New"'>А</span><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;font-family:"Courier New";
+mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span><span class=GramE>public</span>:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span lang=EN-US style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New";mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>    </span></span><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'>A(){}<span
+style='mso-spacerun:yes'>                     </span>// конструктор класса<span
+class=GramE> А</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>   
+</span>~A(){}<span style='mso-spacerun:yes'>                   </span>//
+деструктор<span style='mso-spacerun:yes'>  </span>класса<span class=GramE> А</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>};<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span class=SpellE><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'>void</span></span><span style='mso-bidi-font-size:
+12.0pt;font-family:"Courier New"'> <span class=SpellE>main</span>()<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>{<span style='mso-spacerun:yes'>  </span>A *<span
+class=SpellE>a,*b</span>;<span style='mso-spacerun:yes'>              </span>//
+описание указателей на объект класса<span class=GramE> А</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>float</span> *<span class=SpellE>c,*d</span>;<span
+style='mso-spacerun:yes'>         </span>// описание указателей на элементы
+типа <span class=SpellE>float</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>a=new</span> A;<span style='mso-spacerun:yes'>           </span>//
+выделение памяти для одного объекта класса<span class=GramE> А</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>b=new</span> A[3];<span style='mso-spacerun:yes'>      </span>//
+выделение памяти для массива объектов класса<span class=GramE> А</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>c=new</span> <span class=SpellE>float</span>;<span
+style='mso-spacerun:yes'>       </span>// выделение памяти для одного элемента
+типа <span class=SpellE>float</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>d=new</span> <span class=SpellE>float</span>[4];<span
+style='mso-spacerun:yes'>  </span>// выделение памяти для массива элементов
+типа <span class=SpellE>float</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>   </span><span
+style='mso-spacerun:yes'> </span><span class=SpellE>delete</span> <span
+class=SpellE>a</span>;<span style='mso-spacerun:yes'>             </span>//
+освобождение памяти, занимаемой одним объектом<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>delete</span> [] <span class=SpellE>b</span>;<span
+style='mso-spacerun:yes'>      </span>// освобождение памяти, занимаемой
+массивом объектов<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>delete</span> <span class=SpellE>c</span>;<span
+style='mso-spacerun:yes'>          </span>// освобождение памяти одного
+элемента типа <span class=SpellE>float</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>delete</span> [] <span class=SpellE>d</span>;<span
+style='mso-spacerun:yes'>      </span>// освобождение памяти массива элементов
+типа <span class=SpellE>float</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:12.0pt;
+font-family:"Courier New"'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:36.0pt'><span style='mso-bidi-font-size:
+12.0pt'>При удалении объекта оператором <span class=SpellE>delete</span>
+вначале вызывается деструктор этого объекта, а потом освобождается память. При
+удалении массива объектов с помощью операции <span class=SpellE>delete</span>[]
+деструктор вызывается для каждого элемента массива.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-indent:0cm'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

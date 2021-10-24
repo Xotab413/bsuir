@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConversionLog Date="07.10.2021 1:22:19">
+  <WorksheetData SourceVersion="14/15" Source="C:\Semen\university\2_course\3_sem\ТЭЦ\lab_2\лаба 2.xmcd" Destination="C:\Semen\university\2_course\3_sem\ТЭЦ\lab_2\лаба 2.mcdx" />
+  <Worksheet SourceRegionCount="78" WorksheetIssueCount="0" RegionsWithIssueCount="16"><IssueGroup Category="Расхождения в отображении" Count="14"><ConversionIssue Count="14" Text="Данная область была выведена из региона блока решения. Точность результатов при этом сохраняется." /></IssueGroup><IssueGroup Category="Расхождения в расчетах" Count="2"><ConversionIssue Count="2" Text="При преобразовании изменился шрифт формул. Проверьте, не изменились ли результаты расчетов." /></IssueGroup></Worksheet>
+</ConversionLog>
