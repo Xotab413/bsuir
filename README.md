@@ -7,22 +7,22 @@ This repository contains most of the laboratory work of the specialty Computing 
 <details>
 <summary>📘 Semester 1</summary>
 
-- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/semester-1/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
-- [✅**Инженерная и компьютерная графика**](https://github.com/Xotab413/bsuir/semester-1/computer-engineering-graphics)
+- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-1/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
+- [✅**Инженерная и компьютерная графика**](https://github.com/Xotab413/bsuir/tree/main/semester-1/computer-engineering-graphics)
 
 </details>
 
 <details>
 <summary>📘 Semester 2</summary>
 
-- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/semester-2/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
-- [✅**Арифметические и логические основы вычислительной техники**](https://github.com/Xotab413/bsuir/semester-2/arithmetic-and-logical-foundations-of-computer-technology)
+- [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-2/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
+- [✅**Арифметические и логические основы вычислительной техники**](https://github.com/Xotab413/bsuir/tree/main/semester-2/arithmetic-and-logical-foundations-of-computer-technology)
 
 </details>
 
 <details>
 <summary>📘 Semester 3</summary>
 
-- [✅**Конструирование программ и языки программирования**](https://github.com/Xotab413/bsuir/semester-3/programming-design-and-programming-languages) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/steppbol/bsuir-csn-cmsn-helper/search?l=C%2B%2B)
-- [✅**Теория электрических цепей**](https://github.com/Xotab413/bsuir/semester-3/electrical-circuit-theory)
+- [✅**Конструирование программ и языки программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-3/programming-design-and-programming-languages) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/steppbol/bsuir-csn-cmsn-helper/search?l=C%2B%2B)
+- [✅**Теория электрических цепей**](https://github.com/Xotab413/bsuir/tree/main/semester-3/electrical-circuit-theory)
 </details>
