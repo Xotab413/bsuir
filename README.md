@@ -23,6 +23,6 @@ This repository contains most of the laboratory work of the specialty Computing 
 <details>
 <summary>📘 Semester 3</summary>
 
-- [✅**Конструирование программ и языки программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-3/programming-design-and-programming-languages) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/steppbol/bsuir-csn-cmsn-helper/search?l=C%2B%2B)
+- [✅**Конструирование программ и языки программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-3/programming-design-and-programming-languages) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C%2B%2B)
 - [✅**Теория электрических цепей**](https://github.com/Xotab413/bsuir/tree/main/semester-3/electrical-circuit-theory)
 </details>
