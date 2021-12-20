@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ConversionLog Date="07.10.2021 1:22:38">
-  <WorksheetData SourceVersion="14/15" Source="C:\Semen\university\2_course\3_sem\ТЭЦ\lab_3\лаба 3.xmcd" Destination="C:\Semen\university\2_course\3_sem\ТЭЦ\lab_3\лаба 3.mcdx" />
-  <Worksheet SourceRegionCount="66" WorksheetIssueCount="0" RegionsWithIssueCount="1"><IssueGroup Category="Расхождения в отображении" Count="1"><ConversionIssue Count="1" Text="Изображение оператора изменилось по сравнению с документом-источником. Точность результатов при этом сохраняется." /></IssueGroup></Worksheet>
-</ConversionLog>
