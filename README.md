@@ -3,6 +3,7 @@
 
 🎓 Note:
 This repository contains most of the laboratory work of the specialty Computing Machines. Not all of the works presented here are completely correct and may not correspond to your task. I hope that some of these works come in handy as an example.<br>
+I forget about forks (just copy all staff( ), and that why i leave link of the original [source](https://github.com/steppbol/bsuir-csn-cmsn-helper)
 ---
 <details>
 <summary>📘 Semester 1</summary>
