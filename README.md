@@ -1,4 +1,4 @@
-# Belarusian State University of Informatics and Radioelectronics<br> Faculty of Computer Systems and Networks<br> Specialty of Computing Machines, Systems and Networks
+﻿# Belarusian State University of Informatics and Radioelectronics<br> Faculty of Computer Systems and Networks<br> Specialty of Computing Machines, Systems and Networks
 
 
 🎓 Note:
@@ -26,4 +26,5 @@ I forget about forks (just copy all staff( ), and that why i leave link of the o
 
 - [✅**Конструирование программ и языки программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-3/programming-design-and-programming-languages) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C%2B%2B)
 - [✅**Теория электрических цепей**](https://github.com/Xotab413/bsuir/tree/main/semester-3/electrical-circuit-theory)
+- [✅**Физика(ядерка)**](https://github.com/Xotab413/bsuir/tree/main/semester-3/physics)
 </details>
