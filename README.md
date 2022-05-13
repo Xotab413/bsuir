@@ -1,4 +1,4 @@
-<h2 align="center"> 🎓 Belarusian State University of Informatics and Radioelectronics <br/> 
+﻿<h2 align="center"> 🎓 Belarusian State University of Informatics and Radioelectronics <br/> 
  (BSUIR) - БГУИР <br/>Faculty of Computer Systems and Networks (FKSiS) - ФКСиС<br/>
  Specialty of Computing Machines, Systems and Networks (VMSiS) - ВМСиС <br/>2020-2024 г.
 </h2>
@@ -19,6 +19,7 @@ I forget about forks (just copy all staff( ), and that why i leave link of the o
 - [✅**Инженерная и компьютерная графика**](https://github.com/Xotab413/bsuir/tree/main/semester-1/computer-engineering-graphics)
 - [✅**Высшая математика**](https://github.com/Xotab413/bsuir/tree/main/semester-1/higher-math)
 - [✅**Физика(Механика)**](https://github.com/Xotab413/bsuir/tree/main/semester-1/physics)
+- [✅**Сессия**](https://mega.nz/folder/tOBCWJIQ#6VFbbc7J7PVOZAH6HF8JNQ)
 
 
 </details>
@@ -29,6 +30,7 @@ I forget about forks (just copy all staff( ), and that why i leave link of the o
 - [✅**Основы алгоритмизации и программирования**](https://github.com/Xotab413/bsuir/tree/main/semester-2/fundamentals-of-algorithmization-and-programming) [`C`](https://github.com/Xotab413/bsuir/search?l=C) [`C++`](https://github.com/Xotab413/bsuir/search?l=C++)
 - [✅**Арифметические и логические основы вычислительной техники**](https://github.com/Xotab413/bsuir/tree/main/semester-2/arithmetic-and-logical-foundations-of-computer-technology)
 - [✅**Физика(Электричество)**](https://github.com/Xotab413/bsuir/tree/main/semester-2/physics)
+- [✅**Сессия**](https://mega.nz/folder/gXpCjZpY#4sTSBgLJ9jzq-WLlXYVtjQ)
 
 </details>
 
