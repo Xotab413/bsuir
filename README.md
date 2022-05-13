@@ -9,6 +9,8 @@ RU: В данном репозитории представлены лабора
 P.S. Все авторские права на предоставленные ниже условия лабораторных работ принадлежат Белорусскому  Государственному Университету Информатики и Радиоэлектроники <a href="https://www.bsuir.by/" rel="nofollow">БГУИР</a>, <a href="https://www.bsuir.by/en/" rel="nofollow">BSUIR</a>
 
 I forget about forks (just copy all staff( ), and that why i leave link of the original [source](https://github.com/steppbol/bsuir-csn-cmsn-helper)
+
+Useful links, with university repos and other good stuff [click](https://github.com/stars/Xotab413/lists/bsuir)
 </h4>
 <hr align="center">
 
